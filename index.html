@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter Down</title>
+	<script src="js/countdown.js"></script>
+</head>
+<body>
+	<style>
+		.count-down {
+			display: inline;
+			display: absolute;
+			top: 20px;
+			right: 20px;
+			color: white;
+			font-family: "Microsoft YaHei";
+			background-color: steelblue;
+			padding: 20px;
+		}
+
+		.count-down span {
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+	<div class="count-down" data-deadline="2016-08-31">
+		距离开幕还有 <span></span> 天
+	</div>
+	<script>
+		countdown(".count-down");
+	</script>
+</body>
+</html>
